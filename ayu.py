@@ -11,10 +11,10 @@ from bs4 import BeautifulSoup
 
 #===============================================================================================
 
-aditmadzs = LineClient(authToken='EwtsGPptYoJ1NhCDZAw0.voo4510XogOd5b1iDS++ya.J29YzMYNkYuVMSSZnk2U2MINZInbBqhf5m2WTU1+qDU')
-aditmadzs.log("Auth Token : " + str(aditmadzs.authToken))
-channel = LineChannel(aditmadzs)
-aditmadzs.log("Channel Access Token : " + str(channel.channelAccessToken))
+cl = LineClient(authToken='EwtsGPptYoJ1NhCDZAw0.voo4510XogOd5b1iDS++ya.J29YzMYNkYuVMSSZnk2U2MINZInbBqhf5m2WTU1+qDU')
+cl.log("Auth Token : " + str(aditmadzs.authToken))
+channel = LineChannel(cl)
+cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 ki = LineClient(authToken='EweloEayG7tse2udCT8e.pJ5ek9KpjdY7s2J8uplKNG.1p35ffxQSgr6FFcP8iPOqIATsWUrjhKgVqQDzH8D4sM=')
 ki.log("Auth Token : " + str(ki.authToken))
@@ -43,8 +43,8 @@ sw.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 print ("================[ Success Login ]===============")
 
-poll = LinePoll(aditmadzs)
-call = aditmadzs
+poll = LinePoll(cl)
+call = cl
 creator = ["u54e3b8e75d31386a03e41d4876cfff60"]
 owner = ["u54e3b8e75d31386a03e41d4876cfff60"]
 admin = ["u54e3b8e75d31386a03e41d4876cfff60"]
