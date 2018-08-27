@@ -34,12 +34,12 @@ kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 kb = LineClient(authToken='EwvgHkQSqSpfqu3nqEa1.wGt61J6RthDZogrRLPZAaq.IehF3xbX/BnOV2C8K3zBzP7bccyr2JGJ0hAAV8afnOQ=')
 kb.log("Auth Token : " + str(kb.authToken))
 channel3 = LineChannel(kb)
-kb.log("Channel Access Token : " + str(channel4.channelAccessToken))
+kb.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 sw = LineClient(authToken='Ews8EnlvXC7dmxyant50.xl16DrnYoIUbLufItURtSa.RHnEsTGenw7iSiGLFYCPTLxgkkVy5nG8DtaRY/MITgQ=')
 sw.log("Auth Token : " + str(sw.authToken))
 channel3 = LineChannel(sw)
-sw.log("Channel Access Token : " + str(channel5.channelAccessToken))
+sw.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 print ("================[ Success Login ]===============")
 
