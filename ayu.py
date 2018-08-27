@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 #===============================================================================================
 
 cl = LineClient(authToken='EwtsGPptYoJ1NhCDZAw0.voo4510XogOd5b1iDS++ya.J29YzMYNkYuVMSSZnk2U2MINZInbBqhf5m2WTU1+qDU')
-cl.log("Auth Token : " + str(aditmadzs.authToken))
+cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
@@ -32,14 +32,14 @@ channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 kb = LineClient(authToken='EwvgHkQSqSpfqu3nqEa1.wGt61J6RthDZogrRLPZAaq.IehF3xbX/BnOV2C8K3zBzP7bccyr2JGJ0hAAV8afnOQ=')
-kb.log("Auth Token : " + str(kc.authToken))
+kb.log("Auth Token : " + str(kb.authToken))
 channel3 = LineChannel(kb)
-kb.log("Channel Access Token : " + str(channel3.channelAccessToken))
+kb.log("Channel Access Token : " + str(channel4.channelAccessToken))
 
 sw = LineClient(authToken='Ews8EnlvXC7dmxyant50.xl16DrnYoIUbLufItURtSa.RHnEsTGenw7iSiGLFYCPTLxgkkVy5nG8DtaRY/MITgQ=')
-sw.log("Auth Token : " + str(kc.authToken))
+sw.log("Auth Token : " + str(sw.authToken))
 channel3 = LineChannel(sw)
-sw.log("Channel Access Token : " + str(channel3.channelAccessToken))
+sw.log("Channel Access Token : " + str(channel5.channelAccessToken))
 
 print ("================[ Success Login ]===============")
 
