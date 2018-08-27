@@ -43,8 +43,8 @@ sw.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 print ("================[ Success Login ]===============")
 
-poll = OEPoll(cl)
-call = (cl)
+poll = LinePoll(aditmadzs)
+call = aditmadzs
 creator = ["u54e3b8e75d31386a03e41d4876cfff60"]
 owner = ["u54e3b8e75d31386a03e41d4876cfff60"]
 admin = ["u54e3b8e75d31386a03e41d4876cfff60"]
