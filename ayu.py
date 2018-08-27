@@ -11,17 +11,48 @@ from bs4 import BeautifulSoup
 
 #===============================================================================================
 
-cl = LINE("EwtsGPptYoJ1NhCDZAw0.voo4510XogOd5b1iDS++ya.J29YzMYNkYuVMSSZnk2U2MINZInbBqhf5m2WTU1+qDU=") # akun utama
+# -*- coding: utf-8 -*- 
+import LINEPY
+from LINEPY import *
+from akad.ttypes import *
+from multiprocessing import Pool, Process
+from time import sleep
+import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
+from datetime import timedelta, date
+from datetime import datetime
+from bs4 import BeautifulSoup
 
-ki = LINE("EweloEayG7tse2udCT8e.pJ5ek9KpjdY7s2J8uplKNG.1p35ffxQSgr6FFcP8iPOqIATsWUrjhKgVqQDzH8D4sM=")
+#===============================================================================================
 
-kk = LINE("EwliTbm2kvnyyrj3xZR5.i45RJ4NK757OdlSiTmqtTq.b1aMgjlY31o5gZBMuhNohx43FcxD8s6qIRsNf0UOa9w=")
+aditmadzs = LineClient(authToken='EwtsGPptYoJ1NhCDZAw0.voo4510XogOd5b1iDS++ya.J29YzMYNkYuVMSSZnk2U2MINZInbBqhf5m2WTU1+qDU')
+aditmadzs.log("Auth Token : " + str(aditmadzs.authToken))
+channel = LineChannel(aditmadzs)
+aditmadzs.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kc = LINE("Ew7SXswzuB9YiOZxiZPc.Wrkch/bcA0jhgf40p48Vha.oD6ShowaDGpQ77eKwI4n7UWIYAgRy37AVG634wl3D3g=")
+ki = LineClient(authToken='EweloEayG7tse2udCT8e.pJ5ek9KpjdY7s2J8uplKNG.1p35ffxQSgr6FFcP8iPOqIATsWUrjhKgVqQDzH8D4sM=')
+ki.log("Auth Token : " + str(ki.authToken))
+channel1 = LineChannel(ki)
+ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kb = LINE("EwvgHkQSqSpfqu3nqEa1.wGt61J6RthDZogrRLPZAaq.IehF3xbX/BnOV2C8K3zBzP7bccyr2JGJ0hAAV8afnOQ=")
+kk = LineClient(authToken='EwliTbm2kvnyyrj3xZR5.i45RJ4NK757OdlSiTmqtTq.b1aMgjlY31o5gZBMuhNohx43FcxD8s6qIRsNf0UOa9w=')
+kk.log("Auth Token : " + str(kk.authToken))
+channel2 = LineChannel(kk)
+kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-sw = LINE("Ews8EnlvXC7dmxyant50.xl16DrnYoIUbLufItURtSa.RHnEsTGenw7iSiGLFYCPTLxgkkVy5nG8DtaRY/MITgQ=") # Ghost
+kc = LineClient(authToken='Ew7SXswzuB9YiOZxiZPc.Wrkch/bcA0jhgf40p48Vha.oD6ShowaDGpQ77eKwI4n7UWIYAgRy37AVG634wl3D3g=')
+kc.log("Auth Token : " + str(kc.authToken))
+channel3 = LineChannel(kc)
+kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+
+kb = LineClient(authToken='EwvgHkQSqSpfqu3nqEa1.wGt61J6RthDZogrRLPZAaq.IehF3xbX/BnOV2C8K3zBzP7bccyr2JGJ0hAAV8afnOQ=')
+kb.log("Auth Token : " + str(kc.authToken))
+channel3 = LineChannel(kb)
+kb.log("Channel Access Token : " + str(channel3.channelAccessToken))
+
+sw = LineClient(authToken='Ews8EnlvXC7dmxyant50.xl16DrnYoIUbLufItURtSa.RHnEsTGenw7iSiGLFYCPTLxgkkVy5nG8DtaRY/MITgQ=')
+sw.log("Auth Token : " + str(kc.authToken))
+channel3 = LineChannel(sw)
+sw.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 print ("================[ Success Login ]===============")
 
